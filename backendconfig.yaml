@@ -1,0 +1,17 @@
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: session-cookie-config
+spec:
+
+  ## Session affinity
+  sessionAffinity:
+    affinityType: "GENERATED_COOKIE"
+    affinityCookieTtlSec: 50
+
+  ## Connection Draining timeout
+  connectionDraining:
+    drainingTimeoutSec: 60
+
+  ## backend service timeout
+  timeoutSec: 40
