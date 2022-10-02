@@ -2,14 +2,14 @@
 
 The repo contains 2 helm charts to demo GKE Ingress.
 
-##### Deploy Host based GKE ingress
+### Deploy Host based GKE ingress
 To see how hostname based routing works in GKE ingress, please deploy web_based_ingress helm chart using below command
 
 ```bash
 helm install host-based-ingress ./web_based_ingress --namespace <namespaceName>
 ```
 
-##### Deploy GKE ingress with custom backend and frontend configuration 
+### Deploy GKE ingress with custom backend and frontend configuration 
 To see how we can configure backend service configuration and Ingress frontend configuration via kubernetes objects, deploy customize_ingress helm chart.
 <br>
 
